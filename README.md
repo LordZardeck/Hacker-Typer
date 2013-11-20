@@ -1,3 +1,7 @@
+## Example
+
+Want to test it in action? [Check it out here.](http://lordzardeck.github.io/Hacker-Typer)
+
 ## How To Use
 
 There are various options availabe to configure how you want to use the HackerTyper plugin.
