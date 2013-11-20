@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+		<title>Hacker-Typer</title>
+
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js' type='text/javascript'></script>
+		<link href="/css/hacker-typer-style.css" media="screen" rel="stylesheet" type="text/css" />
+		<script src="/js/hacker-typer.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div id='console'></div>
+
+		<script type="text/javascript">
+			$(
+				function(){
+					$("#console").HackerTyper({
+						file: "kernel.txt",
+						speed: 9,
+						control: $.HackerTyper.control.keyPress,
+						complete: function() 
+						{
+							setTimeout(function(){
+								$("#console").remove();
+								$.HackerTyper.showAccess();
+							}, 2000);					
+						}
+					});					
+				}
+			);
+		</script>
+	</body>
+</html>
